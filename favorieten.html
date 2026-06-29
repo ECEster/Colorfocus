@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Jouw opgeslagen favoriete kleurplaten voor volwassenen."/>
+  <title>Favorieten — Kleurplaten voor Volwassenen</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='26' font-size='26'>🎨</text></svg>"/>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <span class="nav-logo-icon">🎨</span>
+      Kleurplaten
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html"      data-i18n="nav_home">Home</a></li>
+      <li><a href="galerij.html"    data-i18n="nav_gallery">Galerij</a></li>
+      <li><a href="favorieten.html" data-i18n="nav_favorites">Favorieten</a></li>
+      <li><a href="tips.html"       data-i18n="nav_tips">Printtips</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="lang-btn" data-lang="nl">NL</button>
+      <button class="lang-btn" data-lang="en">EN</button>
+      <a href="favorieten.html" class="nav-fav-btn">
+        ♥ <span class="fav-count hidden">0</span>
+      </a>
+    </div>
+  </div>
+</nav>
+
+<!-- Page header -->
+<div style="background:linear-gradient(135deg,#FFF0F0 0%,#F8F7F4 100%); padding:2.5rem clamp(1rem,4vw,2.5rem) 2rem; border-bottom:1px solid #E6E4DF;">
+  <div style="max-width:1200px;margin:0 auto;">
+    <p class="section-tag">♥ Favorieten</p>
+    <h1 data-i18n="fav_title">Mijn Favorieten</h1>
+    <p data-i18n="fav_sub">Jouw opgeslagen kleurplaten</p>
+  </div>
+</div>
+
+<!-- Empty state -->
+<div id="fav-empty" class="favorites-empty" style="display:none;">
+  <div class="favorites-empty-icon">♡</div>
+  <h2 data-i18n="fav_empty_title">Nog geen favorieten</h2>
+  <p data-i18n="fav_empty_sub">Klik op het hartje op een kleurplaat om hem hier op te slaan.</p>
+  <a href="galerij.html" class="btn-primary" data-i18n="fav_btn">Bekijk alle kleurplaten</a>
+</div>
+
+<!-- Favorites grid -->
+<div class="section">
+  <div class="cards-grid" id="fav-grid"></div>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand">🎨 Kleurplaten</div>
+      <p data-i18n="footer_desc">Gratis kleurplaten voor volwassenen — wekelijks aangevuld met nieuwe ontwerpen.</p>
+    </div>
+    <div>
+      <h4 data-i18n="footer_pages">Pagina's</h4>
+      <ul>
+        <li><a href="index.html"      data-i18n="nav_home">Home</a></li>
+        <li><a href="galerij.html"    data-i18n="nav_gallery">Galerij</a></li>
+        <li><a href="favorieten.html" data-i18n="nav_favorites">Favorieten</a></li>
+        <li><a href="tips.html"       data-i18n="nav_tips">Printtips</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 data-i18n="footer_cats">Categorieën</h4>
+      <ul>
+        <li><a href="galerij.html?cat=mandala">Mandala's</a></li>
+        <li><a href="galerij.html?cat=botanisch">Botanisch</a></li>
+        <li><a href="galerij.html?cat=fantasy">Fantasy</a></li>
+        <li><a href="galerij.html?cat=historisch">Historisch</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2025 Kleurplaten voor Volwassenen — Gratis downloaden & printen</div>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

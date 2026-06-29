@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Gratis kleurplaten voor volwassenen — mandala's, botanisch, fantasy, pin-up, historische kostuums en meer. Wekelijks nieuw."/>
+  <title>Kleurplaten voor Volwassenen — Gratis</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='26' font-size='26'>🎨</text></svg>"/>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <span class="nav-logo-icon">🎨</span>
+      Kleurplaten
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html"     data-i18n="nav_home">Home</a></li>
+      <li><a href="galerij.html"   data-i18n="nav_gallery">Galerij</a></li>
+      <li><a href="favorieten.html" data-i18n="nav_favorites">Favorieten</a></li>
+      <li><a href="tips.html"      data-i18n="nav_tips">Printtips</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="lang-btn" data-lang="nl">NL</button>
+      <button class="lang-btn" data-lang="en">EN</button>
+      <a href="favorieten.html" class="nav-fav-btn" title="Favorieten">
+        ♥ <span class="fav-count hidden">0</span>
+      </a>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section style="background:linear-gradient(160deg,#F0EDE8 0%,#EBF2EF 100%); overflow:hidden;">
+  <div class="hero">
+    <div class="hero-text">
+      <span class="hero-badge" data-i18n="hero_badge">Gratis • Altijd nieuw</span>
+      <h1 data-i18n="hero_title">Kleurplaten voor Volwassenen</h1>
+      <p data-i18n="hero_sub">Ontdek meer dan 18 prachtige kleurplaten — van mandala's tot historische kostuums. Gratis downloaden en printen.</p>
+      <div class="hero-search">
+        <input id="hero-search-input" type="text" data-i18n="hero_search_ph" data-i18n-attr="placeholder" placeholder="Zoek een kleurplaat..."/>
+        <button class="btn-search" id="hero-search-btn" data-i18n="hero_btn">Zoeken</button>
+      </div>
+      <div class="hero-stats">
+        <div>
+          <span class="hero-stat-num" data-i18n="pages_count">18+</span>
+          <span class="hero-stat-label" data-i18n="stat_pages">kleurplaten</span>
+        </div>
+        <div>
+          <span class="hero-stat-num" data-i18n="cats_count">9</span>
+          <span class="hero-stat-label" data-i18n="stat_cats">categorieën</span>
+        </div>
+        <div>
+          <span class="hero-stat-num" data-i18n="free_label">100%</span>
+          <span class="hero-stat-label" data-i18n="stat_free">gratis</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-art" id="hero-art"></div>
+  </div>
+</section>
+
+<hr class="divider"/>
+
+<!-- Nieuw deze week -->
+<div class="section">
+  <div class="section-header">
+    <div>
+      <p class="section-tag" data-i18n="new_week_tag">Wekelijks Nieuw</p>
+      <h2 data-i18n="new_week_title">Nieuw deze week</h2>
+    </div>
+    <a href="galerij.html" class="see-all" data-i18n="see_all">Bekijk alle</a>
+  </div>
+  <span class="week-badge" data-i18n="weekly_badge">🗓 Nieuw deze week</span>
+  <div style="margin-top:1.2rem;" class="cards-grid" id="new-grid"></div>
+</div>
+
+<hr class="divider"/>
+
+<!-- Categorieën -->
+<div class="section">
+  <div class="section-header">
+    <div>
+      <p class="section-tag" data-i18n="cat_tag">Categorieën</p>
+      <h2 data-i18n="cat_title">Verken per Categorie</h2>
+    </div>
+  </div>
+  <div class="category-grid" id="cat-grid"></div>
+</div>
+
+<hr class="divider"/>
+
+<!-- Uitgelicht -->
+<div class="section">
+  <div class="section-header">
+    <div>
+      <p class="section-tag" data-i18n="featured_tag">Populair</p>
+      <h2 data-i18n="featured_title">Uitgelichte Kleurplaten</h2>
+    </div>
+    <a href="galerij.html" class="see-all" data-i18n="see_all">Bekijk alle</a>
+  </div>
+  <div class="cards-grid" id="featured-grid"></div>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand">🎨 Kleurplaten</div>
+      <p data-i18n="footer_desc">Gratis kleurplaten voor volwassenen — wekelijks aangevuld met nieuwe ontwerpen.</p>
+    </div>
+    <div>
+      <h4 data-i18n="footer_pages">Pagina's</h4>
+      <ul>
+        <li><a href="index.html"      data-i18n="nav_home">Home</a></li>
+        <li><a href="galerij.html"    data-i18n="nav_gallery">Galerij</a></li>
+        <li><a href="favorieten.html" data-i18n="nav_favorites">Favorieten</a></li>
+        <li><a href="tips.html"       data-i18n="nav_tips">Printtips</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 data-i18n="footer_cats">Categorieën</h4>
+      <ul>
+        <li><a href="galerij.html?cat=mandala">Mandala's</a></li>
+        <li><a href="galerij.html?cat=botanisch">Botanisch</a></li>
+        <li><a href="galerij.html?cat=fantasy">Fantasy</a></li>
+        <li><a href="galerij.html?cat=historisch">Historisch</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2025 Kleurplaten voor Volwassenen — Gratis downloaden & printen</div>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
