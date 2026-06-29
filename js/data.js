@@ -437,13 +437,13 @@ const PAGES = [
 ];
 
 const CATEGORIES = [
-  { key:'mandala',     icon:'🔮', nl:'Mandala\'s',          en:'Mandalas'          },
-  { key:'botanisch',   icon:'🌸', nl:'Natuur & Botanisch',   en:'Nature & Botanical'},
-  { key:'fantasy',     icon:'🐉', nl:'Fantasy & Abstract',   en:'Fantasy & Abstract'},
   { key:'dieren',      icon:'🦋', nl:'Dieren & Wildlife',    en:'Animals & Wildlife'},
-  { key:'seizoen',     icon:'🍁', nl:'Seizoenen',            en:'Seasons'           },
+  { key:'fantasy',     icon:'🐉', nl:'Fantasy & Abstract',   en:'Fantasy & Abstract'},
   { key:'geometrisch', icon:'⬡',  nl:'Geometrisch',          en:'Geometric'         },
-  { key:'sprookjes',   icon:'🏰', nl:'Sprookjes & Magie',    en:'Fairy Tales'       },
+  { key:'historisch',  icon:'👗', nl:'Historische Kleding',  en:'Historical Fashion'},
+  { key:'mandala',     icon:'🔮', nl:'Mandala\'s',           en:'Mandalas'          },
+  { key:'botanisch',   icon:'🌸', nl:'Natuur & Botanisch',   en:'Nature & Botanical'},
   { key:'pinup',       icon:'💄', nl:'Pin-up (1940–1960)',   en:'Pin-up (1940–1960)'},
-  { key:'historisch',  icon:'👗', nl:'Historische Kleding',  en:'Historical Fashion'}
+  { key:'seizoen',     icon:'🍁', nl:'Seizoenen',            en:'Seasons'           },
+  { key:'sprookjes',   icon:'🏰', nl:'Sprookjes & Magie',    en:'Fairy Tales'       }
 ];
