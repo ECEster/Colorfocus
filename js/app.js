@@ -101,7 +101,7 @@ function openPrint(page) {
 <body>
   ${page.thumb.replace('viewBox="0 0 300 380"', 'viewBox="0 0 300 380" width="600" height="760"')}
   <h1>${page.title[currentLang] || page.title.nl}</h1>
-  <p>kleurplatenvolwassenen.nl — Gratis kleurplaten voor volwassenen</p>
+  <p>Colorfocus — Gratis kleurplaten voor volwassenen</p>
   <button onclick="window.print()">🖨 Afdrukken / Opslaan als PDF</button>
 </body></html>`);
   win.document.close();

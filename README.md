@@ -1,4 +1,4 @@
-# 🎨 Kleurplaten voor Volwassenen
+# 🎨 Colorfocus — Gratis Kleurplaten voor Volwassenen
 
 Gratis kleurplaten voor volwassenen — statische website zonder backend, klaar voor GitHub Pages.
 
